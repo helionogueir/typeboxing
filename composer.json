@@ -5,6 +5,8 @@
     "homepage": "http://www.qalt-ed.com.br/",
     "license": "GNU3",
     "keywords": [
+        "Framework",
+        "PHP",
         "Type",
         "Type Hinting",
         "Type Boxing"
