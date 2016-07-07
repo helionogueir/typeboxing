@@ -47,7 +47,7 @@ abstract class Json implements Type {
    * 
    * @return stdClass Return var object
    */
-  protected final function getObject() {
+  public final function getObject() {
     return $this->object;
   }
 
