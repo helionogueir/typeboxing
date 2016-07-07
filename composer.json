@@ -22,8 +22,6 @@
         }
     ],
     "autoload": {
-        "classmap": [
-            "core/autoload/register.inc"
-        ]
+        "files": ["core/autoload/register.inc"]
     }
 }
