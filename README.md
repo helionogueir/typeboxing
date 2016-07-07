@@ -1,2 +1,2 @@
-# typeboxing
-Type Boxing
+# TypeBoxing
+TypeBoxing - Type Boxing classes
