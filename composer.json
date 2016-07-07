@@ -8,8 +8,8 @@
         "Framework",
         "PHP",
         "Type",
-        "Type Hinting",
-        "Type Boxing"
+        "TypeHinting",
+        "TypeBoxing"
     ],
     "require": {
         "php": ">=5.4.6"

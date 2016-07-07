@@ -1,9 +1,9 @@
 <?php
 
-namespace typeBoxing\type;
+namespace helionogueir\typeBoxing\type;
 
 use stdClass;
-use typeBoxing\Type;
+use helionogueir\typeBoxing\Type;
 
 /**
  * JSON (JavaScript Object Notation) type:

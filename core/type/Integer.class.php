@@ -1,8 +1,8 @@
 <?php
 
-namespace typeBoxing\type;
+namespace helionogueir\typeBoxing\type;
 
-use typeBoxing\Type;
+use helionogueir\typeBoxing\Type;
 
 /**
  * Integer type:

@@ -1,8 +1,8 @@
 <?php
 
-namespace typeBoxing\type\json;
+namespace helionogueir\typeBoxing\type\json;
 
-use typeBoxing\type\Json;
+use helionogueir\typeBoxing\type\Json;
 
 /**
  * JSON (JavaScript Object Notation) type:

@@ -20,9 +20,9 @@ $result = "None";
 $type = !empty($_POST['type']) ? $_POST['type'] : null;
 $value = !empty($_POST['value']) ? $_POST['value'] : null;
 if (!empty($type) && !empty($value)) {
-  $classname = "typeBoxing\\type\\{$type}";
+  $classname = "helionogueir\\typeBoxing\\type\\{$type}";
   $class = new $classname($value);
-  if ($class instanceof typeBoxing\Type) {
+  if ($class instanceof helionogueir\typeBoxing\Type) {
     $result = $class;
   }
 }

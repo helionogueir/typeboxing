@@ -1,11 +1,11 @@
 <?php
 
-namespace typeBoxing\type\json\tool;
+namespace helionogueir\typeBoxing\type\json\tool;
 
 use stdClass;
 use Exception;
 use core\Lang;
-use typeBoxing\type\String;
+use helionogueir\typeBoxing\type\String;
 
 /**
  * Check object map:

@@ -1,6 +1,6 @@
 <?php
 
-namespace typeBoxing;
+namespace helionogueir\typeBoxing;
 
 /**
  * Data type:
