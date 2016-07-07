@@ -19,7 +19,7 @@ abstract class Boxing {
     foreach ($map as $field => $type) {
       $parameter->{$field} = null;
       if (isset($data[$field])) {
-        $classname = "typeBoxing\\type\\{$type}";
+        $classname = "helionogueir\\typeBoxing\\type\\{$type}";
         $class = new $classname($data[$field]);
         if (($class instanceof Type)) {
           $parameter->{$field} = $class;
