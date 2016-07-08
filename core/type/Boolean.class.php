@@ -16,9 +16,7 @@ class Boolean implements Type {
   private $boolean = null;
 
   function __construct($value) {
-    if (is_bool($value)) {
-      $this->boolean = $value;
-    }
+    $this->boolean = (!empty($value)) ? true : false;
     return null;
   }
 
