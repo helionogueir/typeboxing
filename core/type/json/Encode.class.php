@@ -2,8 +2,8 @@
 
 namespace helionogueir\typeBoxing\type\json;
 
+use stdClass;
 use helionogueir\typeBoxing\type\Json;
-use helionogueir\typeBoxing\type\String;
 
 /**
  * JSON (JavaScript Object Notation) type:
@@ -12,14 +12,14 @@ use helionogueir\typeBoxing\type\String;
  * @author Helio Nogueira <helio.nogueir@gmail.com>
  * @version v1.0.0
  */
-class Decode extends Json {
+class Encode extends Json {
 
-  function __construct($text) {
-    if (!empty($text)) {
-      $object = json_decode($text);
+  function __construct(stdClass $object) {
+    if (count((array) $object)) {
+      $text = json_encode($object);
       if (JSON_ERROR_NONE === json_last_error()) {
+        $this->text = $text;
         $this->object = $object;
-        $this->text = new String($text);
       }
     }
     return null;

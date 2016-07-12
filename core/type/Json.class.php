@@ -14,20 +14,8 @@ use helionogueir\typeBoxing\Type;
  */
 abstract class Json implements Type {
 
-  private $text = '';
-  private $object = null;
-
-  function __construct($value) {
-    $this->object = new stdClass();
-    if (is_string($value)) {
-      $this->text = $value;
-    } else if (is_object($value)) {
-      $this->object = $value;
-    }
-    $this->convertText();
-    $this->convertObject();
-    return null;
-  }
+  protected $text = '';
+  protected $object = null;
 
   public function isEmpty() {
     return empty($this->text);
@@ -52,41 +40,20 @@ abstract class Json implements Type {
   }
 
   /**
-   * Convert text:
-   * - Convert text JSON in object;
+   * Get object value var:
+   * - Get value in object var;
    * 
-   * @return null Without return
+   * @param string $index Namespace in object
+   * @return mixed Return value in object
    */
-  private final function convertText() {
-    if (!is_null($this->text)) {
-      $object = json_decode($this->text);
-      if (JSON_ERROR_NONE === json_last_error()) {
-        $this->object = $object;
-      } else {
-        $this->object = new stdClass();
-        $this->text = '';
+  public function __get($index) {
+    $value = null;
+    if (!empty($index)) {
+      if (isset($this->getObject()->{$index})) {
+        $value = $this->getObject()->{$index};
       }
     }
-    return null;
-  }
-
-  /**
-   * Convert object:
-   * - Convert object in text JSON;
-   * 
-   * @return null Without return
-   */
-  private final function convertObject() {
-    if (count((array) $this->object)) {
-      $text = json_encode($this->object);
-      if (JSON_ERROR_NONE === json_last_error()) {
-        $this->text = $text;
-      } else {
-        $this->text = '';
-        $this->object = new stdClass();
-      }
-    }
-    return null;
+    return $value;
   }
 
 }

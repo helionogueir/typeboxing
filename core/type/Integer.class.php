@@ -34,15 +34,4 @@ class Integer implements Type {
     return (string) $this->integer;
   }
 
-  /**
-   * Get value:
-   * - Get value integer;
-   * 
-   * @param string $index Namespace of index
-   * @return int Return the value
-   */
-  public function __get($index) {
-    return ('value' == $index) ? $this->integer : null;
-  }
-
 }
