@@ -1,18 +1,14 @@
 {
     "name": "helionogueir/typeboxing",
-    "type": "library",
     "description": "TypeBoxing - Type Boxing classes",
     "homepage": "http://www.qalt-ed.com.br/",
-    "license": "GNU3",
-    "keywords": [
-        "Framework",
-        "PHP",
-        "Type",
-        "TypeHinting",
-        "TypeBoxing"
-    ],
+    "license": "MIT",
+    "keywords": ["library", "boxing", "php", "php", "type", "typehinting", "typeboxing"],
     "require": {
-        "php": ">=5.4.6"
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "files": ["core/autoload/register.inc"]
     },
     "authors": [
         {
@@ -20,8 +16,5 @@
             "email": "helio.nogueir@gmail.com",
             "role": "Arquitect, Tester, Analyst and Developer"
         }
-    ],
-    "autoload": {
-        "files": ["core/autoload/register.inc"]
-    }
+    ]
 }

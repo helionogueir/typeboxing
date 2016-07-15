@@ -6,7 +6,7 @@ use helionogueir\typeBoxing\Type;
 
 /**
  * String type:
- * - Autoboxing string type;
+ * - Boxing string type
  *
  * @author Helio Nogueira <helio.nogueir@gmail.com>
  * @version v1.0.0

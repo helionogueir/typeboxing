@@ -12,8 +12,24 @@ use helionogueir\typeBoxing\Type;
  * @author Helio Nogueira <helio.nogueir@gmail.com>
  * @version v1.0.0
  */
-abstract class Boxing {
+class Boxing {
 
+  /**
+   * Block construct the class, because this class is static
+   * @return false
+   */
+  public function __construct() {
+    return false;
+  }
+
+  /**
+   * Casting data:
+   * - Boxing data values;
+   * 
+   * @param Array $data Data values
+   * @param Array $map Map of values find
+   * @return stdClass Elemets were boxing
+   */
   public static final function cast(Array $data, Array $map) {
     $parameter = new stdClass();
     foreach ($map as $field => $type) {

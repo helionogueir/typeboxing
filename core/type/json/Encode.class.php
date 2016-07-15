@@ -7,13 +7,20 @@ use helionogueir\typeBoxing\type\Json;
 
 /**
  * JSON (JavaScript Object Notation) type:
- * - Autoboxing string type;
+ * - Boxing JSON encode
  *
  * @author Helio Nogueira <helio.nogueir@gmail.com>
  * @version v1.0.0
  */
 class Encode extends Json {
 
+  /**
+   * Construct JSON text:
+   * - Convert object in JSON text
+   * 
+   * @param stdClass $object Object to be text JSON
+   * @return null
+   */
   function __construct(stdClass $object) {
     if (count((array) $object)) {
       $text = json_encode($object);
