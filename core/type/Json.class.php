@@ -18,7 +18,7 @@ abstract class Json implements Type {
   protected $object = null;
 
   public function isEmpty() {
-    return empty($this->text);
+    return (('' == $this->text) && (null == $this->text));
   }
 
   public function equals(Type $value) {

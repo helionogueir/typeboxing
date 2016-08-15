@@ -23,7 +23,7 @@ class String implements Type {
   }
 
   public function isEmpty() {
-    return empty($this->string);
+    return (('' == $this->string) && (null == $this->string));
   }
 
   public function equals(Type $value) {

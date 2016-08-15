@@ -23,7 +23,7 @@ class Integer implements Type {
   }
 
   public function isEmpty() {
-    return !(bool) $this->integer;
+    return (('' == $this->integer) && (null == $this->integer));
   }
 
   public function equals(Type $value) {
