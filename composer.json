@@ -1,7 +1,7 @@
 {
     "name": "helionogueir/typeboxing",
     "description": "TypeBoxing - Type Boxing classes",
-    "homepage": "http://www.qalt-ed.com.br/",
+    "homepage": "https://github.com/helionogueir",
     "license": "MIT",
     "keywords": ["library", "boxing", "php", "php", "type", "typehinting", "typeboxing"],
     "require": {
@@ -13,8 +13,7 @@
     "authors": [
         {
             "name": "Helio Nogueira",
-            "email": "helio.nogueir@gmail.com",
-            "role": "Arquitect, Tester, Analyst and Developer"
+            "email": "helio.nogueir@gmail.com"
         }
     ]
 }
