@@ -7,7 +7,7 @@ namespace helionogueir\typeBoxing;
  * - Boxing data type
  *
  * @author Helio Nogueira <helio.nogueir@gmail.com>
- * @version v1.0.0
+ * @version v1.1.0
  */
 interface Type {
 
@@ -16,7 +16,7 @@ interface Type {
    * - Contruct data type
    * 
    * @param mixed $value Value that will convert to type
-   * @return null Without return
+   * @return null
    */
   function __construct($value);
 

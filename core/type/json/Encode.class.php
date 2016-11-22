@@ -10,7 +10,7 @@ use helionogueir\typeBoxing\type\Json;
  * - Boxing JSON encode
  *
  * @author Helio Nogueira <helio.nogueir@gmail.com>
- * @version v1.0.0
+ * @version v1.1.0
  */
 class Encode extends Json {
 

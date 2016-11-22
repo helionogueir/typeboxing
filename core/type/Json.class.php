@@ -10,7 +10,7 @@ use helionogueir\typeBoxing\Type;
  * - Boxing string type
  *
  * @author Helio Nogueira <helio.nogueir@gmail.com>
- * @version v1.0.0
+ * @version v1.1.0
  */
 abstract class Json implements Type {
 
