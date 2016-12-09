@@ -1,11 +1,11 @@
 {
     "name": "helionogueir/typeboxing",
-    "description": "TypeBoxing - Type Boxing Classes",
+    "description": "Specific data types and tools for hitting type",
     "homepage": "https://github.com/helionogueir",
     "license": "MIT",
-    "keywords": ["library", "boxing", "php", "hinting", "type", "typehinting", "typeboxing"],
+    "keywords": ["library", "tool", "boxing", "hinting", "type", "typehinting", "typeboxing"],
     "require": {
-        "php": ">=7.1"
+        "php": ">=7.0"
     },
     "autoload": {
         "files": ["core/autoload/register.inc"]
